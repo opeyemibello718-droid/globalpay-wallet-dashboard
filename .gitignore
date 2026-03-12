@@ -1,0 +1,19 @@
+# Node.js
+node_modules/
+.DS_Store
+.env
+.env.*
+
+# Logs
+logs/**/*.log
+logs/**/*.json
+
+# Environment Configurations
+*.local
+*.yml
+*.yaml
+*.json
+
+# Build Output
+/dist/
+/build/
