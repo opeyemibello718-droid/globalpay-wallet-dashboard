@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fintech Wallet Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Your Wallet</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#" id="sendMoneyBtn">Send Money</a></li>
+                <li><a href="#" id="requestPaymentBtn">Request Payment</a></li>
+                <li><a href="#">Transaction History</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="walletBalance">
+            <h2>Wallet Balance: $500.00</h2>
+        </section>
+        <section id="transactionHistory">
+            <h2>Transaction History</h2>
+            <ul>
+                <li>Transaction 1: +$100.00</li>
+                <li>Transaction 2: -$50.00</li>
+                <li>Transaction 3: +$200.00</li>
+            </ul>
+        </section>
+    </main>
+    <div id="sendMoneyModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Send Money</h2>
+            <form>
+                <label for="recipient">Recipient:</label>
+                <input type="text" id="recipient" name="recipient" required>
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" name="amount" required>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+    <div id="requestPaymentModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Request Payment</h2>
+            <form>
+                <label for="payer">Payer:</label>
+                <input type="text" id="payer" name="payer" required>
+                <label for="amountRequest">Amount:</label>
+                <input type="number" id="amountRequest" name="amountRequest" required>
+                <button type="submit">Request</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
